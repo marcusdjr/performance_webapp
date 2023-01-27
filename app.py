@@ -5,6 +5,7 @@ import pickle
 
 #Create an app object using the Flask class. 
 app = Flask(__name__)
+server = app.server
 
 #Load the trained model. (Pickle file)
 model = pickle.load(open('models/model.pkl', 'rb'))
